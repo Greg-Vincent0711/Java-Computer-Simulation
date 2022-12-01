@@ -2,7 +2,6 @@ public class CPU_Test3 {
     
     
     public static void main(String[] args){
-        // Computer MicrosoftWindows = new Computer();
         //INTERRUPT0 - print Registers
         //INTERRUPT1 - print Mem,
         Computer Unix  = new Computer();
