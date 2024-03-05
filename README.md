@@ -32,7 +32,7 @@ Writing Instructions:
     
 Commands that can be used:
 - MOVE. In order to use the arithmetic operations that will be mentioned below, there has to be a value put into a register first.
-  To use Move: "MOVE <register from 0 to 15> < Integer from -255 to 255 "
+  To use Move: "MOVE <register from 0 to 15> <Integer from -255 to 255> "
   For ex: "MOVE R1 13 ", 
 
 - 4 main arithmetic calculations can be performed with the following syntax:
