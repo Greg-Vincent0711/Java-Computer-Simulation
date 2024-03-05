@@ -59,12 +59,7 @@ public class Assembler{
         int num = Integer.parseInt(strNum);
         String strBin = Integer.toBinaryString(num);
         String signExtend;
-        if(num < 0){
-            signExtend = "1";
-        }
-        else{
-            signExtend = "0";
-        }
+        num < 0 ? signExtend = "1" : signExtend = "0";
         switch(currentCommand){
             case "MOVE": 
             case "R0":
