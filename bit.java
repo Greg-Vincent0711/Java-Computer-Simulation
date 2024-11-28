@@ -14,11 +14,7 @@ public class bit implements bitInterface {
 
     public void toggle(){
         //set state to false or true depending on initial value to toggle
-        if(this.state == true){
-            this.state = false;
-        } else{
-            this.state = true;
-        }
+        this.state = !this.state;
     }
 
     public void set(){
