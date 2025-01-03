@@ -21,10 +21,7 @@ public class Memory {
     }
 
     public Longword read(Longword address)throws IllegalArgumentException{
-        if(address.getUnsigned() > 1020){
-            throw new IllegalArgumentException("Address is outside excepted range.");
-        }
-        if(address.getUnsigned() < 0){
+        if(address.getUnsigned() > 1020 || address.getUnsigned() < 0) {
             throw new IllegalArgumentException("Address is outside excepted range.");
         }
         Longword readWord = new Longword();
@@ -39,10 +36,7 @@ public class Memory {
     }
 
     public void write(Longword address, Longword value){
-        if(address.getUnsigned() > 1020){
-            throw new IllegalArgumentException("Address is outside excepted range.");
-        }
-        if(address.getUnsigned() < 0){
+        if(address.getUnsigned() > 1020 || address.getUnsigned() < 0){
             throw new IllegalArgumentException("Address is outside excepted range.");
         }
         int writeCount = 0;
